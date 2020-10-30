@@ -1,24 +1,21 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home } from "../../App"
-import { Menu } from "../../Pages/menu-pg"
-import { Rogue } from "../../Pages/rouge-pg"
+import React from 'react';
+import { Link} from 'react-router-dom';
+
 
 import './Nav.scss'
 
 
 
-class Nav extends Component {
-    render(){
+const Nav =() => {
+   
         return(
             <div className='nav-container'>
-                <Link path='/'>About</Link>   
-                <Link path={Menu} className='nav-item' exact>Menu Planner</Link>
-                <Link path={Rogue} className='nav-item'exact>Rogue Mode</Link>
+                <Link to='/'>About</Link>   
+                <Link to='/menu' className='nav-item'>Menu Planner</Link>
+                <Link to='rogue' className='nav-item'>Rogue Mode</Link>
             </div>
           
         )
-    }
 }
 
 export default Nav;

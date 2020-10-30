@@ -4,7 +4,11 @@ $silk: #FFDAC6;
 $light-green: #BABD8D;
 $dark-green: #7C6A0A;
 
-
+html{
+a{
+    text-decoration: none;
+}
+}
 body{
 background-color: $orange;
 }
