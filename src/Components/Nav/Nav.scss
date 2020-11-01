@@ -1,1 +1,23 @@
-@import "../../App.scss"
+@import "../../App.scss";
+
+.nav-container{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: $silk;
+    align-items: center;
+    justify-content: center;
+    a{
+        margin-left: 1rem;
+        font-family: $secondary-font;
+        color: $dark-green;
+        .name{
+            flex-basis:  100%;
+            font-family: $display-font;
+            }
+    }
+}
+
+.name{
+flex-basis:  100%;
+font-family: $display-font;
+}

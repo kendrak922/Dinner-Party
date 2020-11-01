@@ -1,8 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
 $orange: #EB6424;
 $light-orange: #FA9500;
 $silk: #FFDAC6;
 $light-green: #BABD8D;
 $dark-green: #7C6A0A;
+
+$primary-font: 'Playfair Display', serif;
+$secondary-font: 'Oswald', sans-serif;
+$display-font:'Gravitas One', cursive;
+
 
 html{
 a{
@@ -10,5 +19,7 @@ a{
 }
 }
 body{
-background-color: $orange;
+background-color: $light-orange;
+margin: 0 auto;
+font-family: $primary-font;
 }

@@ -1,12 +1,11 @@
 import React from 'react';
+import Hero from '../Components/Hero/Hero'
 
 
 function About() {
   return (
-    <div className="Menu">
-      <header className="Menu-header">
-     So you're trying to plan a dinner party?
-      </header>
+    <div className="About">
+  <Hero />
     </div>
   );
 }
