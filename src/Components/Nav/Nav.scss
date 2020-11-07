@@ -2,7 +2,7 @@
 
 .nav-container{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     background-color: $silk;
     align-items: center;
     justify-content: center;
@@ -10,14 +10,10 @@
         margin-left: 1rem;
         font-family: $secondary-font;
         color: $dark-green;
-        .name{
-            flex-basis:  100%;
-            font-family: $display-font;
-            }
     }
+    a:first-child{
+        flex-basis:  100%;
+        font-family: $display-font;
+        }
 }
 
-.name{
-flex-basis:  100%;
-font-family: $display-font;
-}

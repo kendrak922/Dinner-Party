@@ -10,7 +10,7 @@ const Nav =() => {
    
         return(
             <div className='nav-container'>
-            <h4 className='name'><Link to='/'>Get it Together</Link></h4>
+            <h4><Link className='name' to='/'>Get it Together</Link></h4>
                 <Link to='/'>About</Link>   
                 <Link to='/menu' className='nav-item'>Menu Planner</Link>
                 <Link to='rogue' className='nav-item'>Rogue Mode</Link>
