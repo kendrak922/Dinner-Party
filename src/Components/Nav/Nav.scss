@@ -2,18 +2,19 @@
 
 .nav-container{
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     background-color: $silk;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     a{
-        margin-left: 1rem;
         font-family: $secondary-font;
         color: $dark-green;
+        margin: 1rem;
     }
+   
     a:first-child{
         flex-basis:  100%;
         font-family: $display-font;
         }
-}
 
+}
