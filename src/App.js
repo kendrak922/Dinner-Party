@@ -5,6 +5,7 @@ import {BrowserRouter , Switch, Route} from 'react-router-dom'
 import Menu from './Pages/menu-pg'
 import Rogue from './Pages/rogue-pg'
 import About from './Pages/about-pg'
+import Footer from './Components/Footer/Footer'
 
 
 
@@ -21,6 +22,7 @@ function App() {
       </Switch>
     </BrowserRouter>
       </header>
+      <Footer />
     </div>
   );
 }
