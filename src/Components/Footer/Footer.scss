@@ -1,11 +1,52 @@
 
-footer{
+@import "../../App.scss";
+
+.footer-container{
     position: relative;
-    text-align: center;
-    background: url('./FooterBackground.svg') no-repeat;
-    background-size: contain;
+    height: auto;
+    color: $dark-green;
+    font-family: $primary-font;
     
 }
-.background{
-height:500px;
+.footer{
+    display: flex;
+    flex-flow: column;
+    background-color: $silk; 
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    h1{
+        font-family: $secondary-font;
+    }
+}
+.footer-start{
+    background: url('./FooterBackground.svg') no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin-bottom: -10px;
+  
+}
+input{
+    border-radius: 5px;
+    height: 2rem;
+}
+label{
+    margin: 1rem;
+}
+textarea{
+    height: 5rem;
+   }
+   .submit{
+       width: 6rem;
+       font-size: 1.1rem;
+       font-family: $secondary-font;
+       background-color: $dark-green;
+       color: $silk;
+   }
+   input[type=text]{
+    font-family: $primary-font
+}
+textarea[type=textarea]{
+    font-family: $primary-font
 }
