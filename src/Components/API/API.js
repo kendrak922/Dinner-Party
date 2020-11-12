@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-;
 
 
 function API() {
@@ -7,19 +6,15 @@ function API() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
   const MY_KEY= process.env.REACT_APP_API_KEY
-  let url= `https://api.spoonacular.com/recipes/random?number=1&apiKey=${MY_KEY}`
+  let apiURL= `https://api.spoonacular.com/recipes/random?number=4&apiKey=${MY_KEY}`
 
-
-  // Note: the empty deps array [] means
-  // this useEffect will run once
-  // similar to componentDidMount()
   useEffect(() => {
-    fetch(url)
+    fetch(apiURL)
       .then(res => res.json())
       .then(
         (result) => {
           setIsLoaded(true);
-          setItems(result);
+          setItems(result.recipes);
         },
         // Note: it's important to handle errors here
         // instead of a catch() block so that we don't swallow
@@ -29,7 +24,7 @@ function API() {
           setError(error);
         }
       )
-  }, [])
+  }, [apiURL])
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -37,13 +32,15 @@ function API() {
     return <div>Loading...</div>;
   } else {
     return (
+      <div>
       <ul>
-        {/* {items.map(item => (
-          <li key={item.name}>
-            {item.name} {item.price}
+        {items.map(item => (
+          <li key={item.title}>
+         {item.title}
           </li>
-        ))} */}
+        ))}
       </ul>
+      </div>
     );
   }
 }
