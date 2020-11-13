@@ -1,18 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Random.scss';
 import API from '../API/API'
 
-class Random extends Component{
-    render(){
-
-    
+const Random = () => {
     return(
         <div>
         <button className='rogue-button'>Go Rogue</button>
         <API />
         </div>
     )
-    }
 }
 
 

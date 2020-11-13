@@ -1,4 +1,5 @@
 import React from 'react';
+import RecipeCard from '../Components/RecipeCard/RecipeCard'
 
 
 function Menu() {
@@ -7,6 +8,7 @@ function Menu() {
       <header className="Menu-header">
      Lets Get Together
       </header>
+      <RecipeCard />
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
+import './API.scss';
 
 
-function API() {
+function API (){
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -16,9 +17,6 @@ function API() {
           setIsLoaded(true);
           setItems(result.recipes);
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
           setIsLoaded(true);
           setError(error);
@@ -32,14 +30,16 @@ function API() {
     return <div>Loading...</div>;
   } else {
     return (
-      <div>
-      <ul>
+        <div>
         {items.map(item => (
-          <li key={item.title}>
-         {item.title}
-          </li>
+            <div className="cardContainer"key={item.title}>
+            <h1>{item.title}</h1>
+            <img src={item.image} alt="meal"/>
+            {/* <p>{item.summary}</p> */}
+            <p>ingredients</p>
+            <a href={item.sourceUrl} target="_blank" rel="noreferrer">Click for Recipe Link</a>
+          </div>
         ))}
-      </ul>
       </div>
     );
   }
