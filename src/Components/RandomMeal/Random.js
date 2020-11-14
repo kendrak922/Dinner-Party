@@ -6,7 +6,13 @@ const Random = () => {
     return(
         <div>
         <button className='rogue-button'>Go Rogue</button>
-        <API />
+        <p>You tried, ok. There's no way to please everyone.</p>
+      <h2>Appetizer</h2>
+      <API meal="appetizer"/>
+      <h2>Dinner</h2>
+      <API meal="dinner"/>
+      <h2>Dessert</h2>
+      <API meal="dessert"/>
         </div>
     )
 }
