@@ -33,10 +33,10 @@ function API (props){
         <div>
         {items.map(item => (
             <div className="cardContainer"key={item.title}>
-            <h1>{item.title}</h1>
+            <h2>{item.title}</h2>
             <img src={item.image} alt="meal"/>
             {/* <p>{item.summary}</p> */}
-            <p>ingredients</p>
+            <p>Ingredients</p>
             <a href={item.sourceUrl} target="_blank" rel="noreferrer">Click for Recipe Link</a>
           </div>
         ))}
