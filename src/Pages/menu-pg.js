@@ -1,5 +1,5 @@
 import React from 'react';
-
+import FoodOptions from "../Components/FoodOptions/FoodOptions"
 
 
 function Menu() {
@@ -8,6 +8,7 @@ function Menu() {
       <header className="Menu-header">
      Lets Get Together
       </header>
+      <FoodOptions />
     </div>
   );
 }

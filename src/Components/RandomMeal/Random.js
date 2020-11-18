@@ -5,12 +5,12 @@ import API from '../API/API'
 const Result = () => {
     return(
        <div className="menu">
-         {/* <h1>Appetizer</h1>
+         <h1>Appetizer</h1>
          <API meal="appetizer"/>
          <h1>Dinner</h1>
          <API meal="dinner"/>
          <h1>Dessert</h1>
-         <API meal="dessert"/> */}
+         <API meal="dessert"/>
          </div>
     )
 }; 
