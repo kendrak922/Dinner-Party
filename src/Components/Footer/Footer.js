@@ -11,19 +11,19 @@ return(
     marginBottom:"-20px",
     width: "100%"
   }}></img>
-    <div className="footer">
+    <form className="footer">
         <h1>Contact Us</h1>
         <label>Name: <br></br>
-        <input name="name" type="text"></input>
+        <input name="name" type="text" />
         </label>
         <label>Email:<br></br> 
-        <input name="email" type="text"></input>
+        <input name="email" type="text" />
         </label>
         <label>Message: <br></br>
-        <textarea name="message" type="textarea"></textarea>
+        <textarea name="message" type="textarea" />
         </label>
-        <input type="submit" value="submit" className="submit"></input> 
-    </div>
+        <input type="submit" value="submit" className="submit" /> 
+    </form>
     </div>
 )
 }

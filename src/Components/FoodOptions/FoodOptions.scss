@@ -1,5 +1,30 @@
+@import '../../App.scss';
+
 form{
     display: flex;
     flex-flow: column;
     text-align: center;
+    color: $dark-green;
+    align-items: center;
+    input[type = submit]{
+        width: 6rem;
+        font-size: 1.1rem;
+        font-family: $secondary-font;
+        background-color: $dark-green;
+        color: $silk;
+    }
+}
+
+.questionBank{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    input{
+        vertical-align: middle;
+    }
+    h2{
+        flex-basis: 100%;
+    }
+  
 }
