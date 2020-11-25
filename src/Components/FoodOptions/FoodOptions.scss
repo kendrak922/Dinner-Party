@@ -1,6 +1,6 @@
 @import '../../App.scss';
 
-form{
+.foodOptions{
     display: flex;
     flex-flow: column;
     text-align: center;
@@ -15,11 +15,12 @@ form{
     }
 }
 
-.questionBank{
+.diets, .allergies, .likes{
     display: flex;
     flex-flow: row wrap;
     text-align: center;
     justify-content: center;
+    margin: 1rem;
     input{
         vertical-align: middle;
     }

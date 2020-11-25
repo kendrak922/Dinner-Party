@@ -6,10 +6,12 @@ function API (props){
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
+  const [count, setCount] = useState(1)
+ 
   const MY_KEY= process.env.REACT_APP_API_KEY
   let apiURL= `https://api.spoonacular.com/recipes/random?number=1&tags=${props.meal}&apiKey=${MY_KEY}`
 
-  useEffect(() => {
+  useEffect((count) => {
     fetch(apiURL)
       .then(res => res.json())
       .then(
@@ -22,7 +24,7 @@ function API (props){
           setError(error);
         }
       )
-  }, [apiURL])
+  }, [apiURL, count])
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -30,8 +32,9 @@ function API (props){
     return <div>Loading...</div>;
   } else {
     return (
+      <div>
+        <button onClick={() => setCount(count + 1)}>Try Another</button>
         <div>
-          <button>click me</button>
         {items.map(item => (
             <div className="cardContainer"key={item.title}>
             <h2>{item.title}</h2>
@@ -42,8 +45,11 @@ function API (props){
           </div>
         ))}
       </div>
+      </div>
     );
   }
 }
 
+
 export default API;
+

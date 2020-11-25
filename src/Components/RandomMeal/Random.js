@@ -6,40 +6,40 @@ const Result = () => {
     return(
        <div className="menu">
          <h1>Appetizer</h1>
-         <API meal="appetizer"/>
+         <API meal="appetizer" />
          <h1>Dinner</h1>
-         <API meal="dinner"/>
+         <API meal="dinner" />
          <h1>Dessert</h1>
-         <API meal="dessert"/>
+         <API meal="dessert" />
          </div>
     )
 }; 
 
 const Random = () => {
-const [random, setRandom] = useState(false);
+const [random, setRandom] = useState('null');
 const onClick = () => {
-    setRandom(true)
+    setRandom(random === true)
     console.log(random)
 }
- if(random){
- return(
- <div>
-    <div className="header"> 
-    <p> Forget Them</p>  
-    <p>You tried, ok. There's no way to please everyone.</p>    
-    <button className='rogue-button'onClick={onClick}>Go Rogue</button>
-    </div>
-  <Result />
-  </div>
- )
+ if(random === 'null'){
+    return(
+        <div className="header"> 
+        <p> Forget Them</p>  
+        <p>You tried, ok. There's no way to please everyone.</p>    
+        <button className='rogue-button' onClick={onClick}>Go Rogue</button>
+        </div>
+         )
  }else{
-     return(
-    <div className="header"> 
-    <p> Forget Them</p>  
-    <p>You tried, ok. There's no way to please everyone.</p>    
-    <button className='rogue-button' onClick={onClick}>Go Rogue</button>
-    </div>
-     )
+    return(
+        <div>
+           <div className="header"> 
+           <p> Forget Them</p>  
+           <p>You tried, ok. There's no way to please everyone.</p>    
+           {/* <button className='rogue-button'onClick={onClick}>Go Rogue</button> */}
+           </div>
+         <Result />
+         </div>
+        )
  }
 }
 

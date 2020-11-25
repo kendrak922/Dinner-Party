@@ -1,3 +1,4 @@
+/////variables
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
@@ -12,8 +13,9 @@ $primary-font: 'Playfair Display', serif;
 $secondary-font: 'Oswald', sans-serif;
 $display-font:'Gravitas One', cursive;
 
-
+// Global Styles
 html{
+
 a{
     text-decoration: none;
     color: $dark-green;
@@ -24,3 +26,21 @@ background-color: $light-orange;
 margin: 0 auto;
 font-family: $primary-font;
 }
+
+
+///////About Page
+.body{
+    
+}
+
+.about-copy{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1rem;
+    text-align: center;
+    color: $dark-green;
+    background-color: $light-green;
+}
+// .copy:first-of-type{
+// float: left;
+// }
