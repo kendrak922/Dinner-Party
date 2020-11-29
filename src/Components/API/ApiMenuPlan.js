@@ -2,30 +2,29 @@ import React, {useState, useEffect} from 'react';
 import './API.scss';
 
 
-function API (props){
+function APIMenu (){
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
-  const [count, setCount] = useState(1)
  
   const MY_KEY= process.env.REACT_APP_API_KEY
-  let apiURL= `https://api.spoonacular.com/recipes/random?number=1&tags=${props.meal}&apiKey=${MY_KEY}`
+  let apiURL= `https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&number=1&addRecipeInformation=true&apiKey=${MY_KEY}`
 
-  useEffect((count) => {
+  useEffect(() => {
     fetch(apiURL)
       .then(res => res.json())
       .then(
-        (result) => {
+        (results) => {
+          console.log(results.results)
           setIsLoaded(true);
-          setItems(result);
-          console.log(result)
+          setItems(results.results);
         },
         (error) => {
           setIsLoaded(true);
           setError(error);
         }
       )
-  }, [apiURL, count])
+  }, [apiURL])
 
   if (error) {
     return <div>Error: {error.message}</div>;
@@ -34,12 +33,11 @@ function API (props){
   } else {
     return (
       <div>
-        <button onClick={() => setCount(count + 1)}>Try Another</button>
         <div>
         {items.map(item => (
-            <div className="cardContainer"key={item.title}>
+            <div className="cardContainer" key={item.title}>
             <h2>{item.title}</h2>
-            <img src={item.image} alt="meal"/>
+            <img src={item.image} alt={item.title}/>
             <a href={item.sourceUrl} target="_blank" rel="noreferrer">Click for Recipe Link</a>
           </div>
         ))}
@@ -50,5 +48,5 @@ function API (props){
 }
 
 
-export default API;
+export default APIMenu;
 
