@@ -2,20 +2,19 @@ import React, {useState, useEffect} from 'react';
 import './API.scss';
 
 
-function APIMenu (){
+function APIMenu (props){
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
  
   const MY_KEY= process.env.REACT_APP_API_KEY
-  let apiURL= `https://api.spoonacular.com/recipes/complexSearch?diet=vegetarian&number=1&addRecipeInformation=true&apiKey=${MY_KEY}`
+  let apiURL= `https://api.spoonacular.com/recipes/complexSearch?diet=${props.diet}?intolerances=${props.allergies}?${props.leaveOut}&number=1&addRecipeInformation=true&apiKey=${MY_KEY}`
 
   useEffect(() => {
     fetch(apiURL)
       .then(res => res.json())
       .then(
         (results) => {
-          console.log(results.results)
           setIsLoaded(true);
           setItems(results.results);
         },

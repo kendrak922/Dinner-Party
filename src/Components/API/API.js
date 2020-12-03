@@ -17,8 +17,7 @@ function API (props){
       .then(
         (result) => {
           setIsLoaded(true);
-          setItems(result);
-          console.log(result)
+          setItems(result.recipes);
         },
         (error) => {
           setIsLoaded(true);

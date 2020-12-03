@@ -1,7 +1,6 @@
 import React from 'react';
 import FoodOptions from "../Components/FoodOptions/FoodOptions"
 
-
 function Menu() {
   return (
     <div className="Menu">
