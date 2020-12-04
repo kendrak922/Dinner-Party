@@ -8,8 +8,8 @@ function APIMenu (props){
   const [items, setItems] = useState([]);
  
   const MY_KEY= process.env.REACT_APP_API_KEY
-  let apiURL= `https://api.spoonacular.com/recipes/complexSearch?diet=${props.diet}?intolerances=${props.allergies}?${props.leaveOut}&number=1&addRecipeInformation=true&apiKey=${MY_KEY}`
-
+  let apiURL= `https://api.spoonacular.com/recipes/complexSearch?diet=${props.diet}?intolerances=${props.allergies}?${props.leaveOut}&number=1&sort=random&addRecipeInformation=true&apiKey=${MY_KEY}`
+  console.log(apiURL)
   useEffect(() => {
     fetch(apiURL)
       .then(res => res.json())

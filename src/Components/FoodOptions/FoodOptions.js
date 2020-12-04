@@ -4,7 +4,7 @@ import ApiMenuPlan from '../API/ApiMenuPlan';
 
 
 const dietList = ['vegetarian', 'vegan', 'ketogenic', 'gluten-free', 'pescatarian', 'paleo'];
-const allergyList = ['dairy', 'egg', 'peanut', 'seafood', 'sesame', 'soy', 'treenut', 'wheat'];
+const allergyList = ['Dairy', 'Egg', 'Peanut', 'Seafood', 'Sesame', 'Soy', 'Treenut', 'wheat'];
 const leaveOutList = ['pork', 'cilantro', 'beef', 'eggs', 'tomato', 'peppers'];
 
 const getCheckedBoxes = (list) => 
