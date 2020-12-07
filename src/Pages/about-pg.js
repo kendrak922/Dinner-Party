@@ -14,15 +14,15 @@ function About() {
     width: "100%"
   }}>
   </img>
-<div className="body">
-  {/* <p>This is an app for people pleasers who chronically over extend themselves. Get Together helps you to (falsley) appear like you have everything under control.</p> */}
+<div className="about-container">
+<h2 className="about-title">About The App</h2>
   <div className="about-copy">
-  {/* <p>Our Menu Planner feature allows you to hone down on a plan</p> */}
-  <button>Menu Planner</button>
-  </div>
-  <div className="about-copy"> 
-  {/* <p>If that doesn't work, try Rogue Mode as a last resort</p> */}
-  <button>Rogue Mode</button>
+  <p>This is an app for people pleasers who chronically over extend themselves. Get Together helps you to (falsley) appear like you have everything under control.</p>
+  <br></br>
+  <p>Our Menu Planner feature allows you to hone down on a plan by brainstorming some recieps that fall within the constraints of your party attendees.</p>
+  <br></br>
+  <p>If that doesn't work, try Rogue Mode as a last resort. A feature that allows you to randomly select a menu.</p>
+  <br></br>
   </div>
   </div>
     </div>

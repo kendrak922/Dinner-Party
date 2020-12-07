@@ -6,7 +6,7 @@ const Footer = ()=>{
 
 return(
     <div className="footer-container">
-   <img src={waves} alt="dinner table" style=
+   <img src={waves} alt="wave styling" style=
   {{
     marginBottom:"-20px",
     width: "100%"

@@ -3,9 +3,9 @@ import './FoodOptions.scss'
 import ApiMenuPlan from '../API/ApiMenuPlan';
 
 
-const dietList = ['vegetarian', 'vegan', 'ketogenic', 'gluten-free', 'pescatarian', 'paleo'];
-const allergyList = ['Dairy', 'Egg', 'Peanut', 'Seafood', 'Sesame', 'Soy', 'Treenut', 'wheat'];
-const leaveOutList = ['pork', 'cilantro', 'beef', 'eggs', 'tomato', 'peppers'];
+const dietList = ['Vegetarian', 'Vegan', 'Ketogenic', 'Gluten-free', 'Pescatarian', 'Paleo'];
+const allergyList = ['Dairy', 'Egg', 'Peanut', 'Seafood', 'Sesame', 'Soy', 'Treenut', 'Wheat'];
+const leaveOutList = ['Pork', 'Cilantro', 'Beef', 'Eggs', 'Tomato', 'Peppers'];
 
 const getCheckedBoxes = (list) => 
     list.map(checkbox => ({
@@ -56,6 +56,7 @@ return (
     <div>
         <form className="foodOptions">
         <div>
+            <h3>Special Diets do we Need to Obey?</h3>
             {diet.map((diet, i) =>
                 <label key={diet.name}>
                     <input
@@ -69,6 +70,7 @@ return (
                 </label>
             )}
            </div>
+           <h3>Any Allergies in the Bunch?</h3>
            <div>
             {allergies.map((allergy, i) =>
                 <label key={allergy.name}>
@@ -84,6 +86,7 @@ return (
             )}
            </div>
            <div>
+           <h3>What Should We Leave Out of This Recipe?</h3>
             {leaveOut.map((leave, i) =>
                 <label key={leave.name}>
                     <input

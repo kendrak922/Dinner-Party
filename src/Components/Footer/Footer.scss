@@ -17,6 +17,11 @@
     align-items: center;
     h1{
         font-family: $secondary-font;
+        font-size: 3rem;
+    }
+    label{
+        font-size: 1.3em;
+        margin: 1rem;
     }
 }
 .footer-start{
@@ -30,9 +35,7 @@ input{
     border-radius: 5px;
     height: 2rem;
 }
-label{
-    margin: 1rem;
-}
+
 textarea{
     height: 5rem;
    }
@@ -49,3 +52,4 @@ textarea{
 textarea[type=textarea]{
     font-family: $primary-font
 }
+

@@ -29,18 +29,55 @@ font-family: $primary-font;
 
 
 ///////About Page
-.body{
-    
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-copy{
     display: flex;
     flex-flow: row wrap;
-    font-size: 1rem;
     text-align: center;
+    font-size: 1.3rem;
     color: $dark-green;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 4%;
+    box-shadow: 2px 2px $dark-green;
     background-color: $light-green;
+    position: relative;
+    p:n-thChild(even){
+    left: 50;
+    }
 }
-// .copy:first-of-type{
-// float: left;
-// }
+
+.about-title{
+    color: $dark-green;
+    font-size: 3em;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 4%;
+    font-family: $secondary-font;
+    border: 1rem solid $dark-green;
+    // background-color: $dark-green;
+    transform: rotate(-8deg)
+    skew(-8deg);
+    margin: 5rem;
+    // box-shadow: 5px 10px #7C6A0A;
+}
+////Responsive
+@media only screen and (min-width: 600px) {
+   .about-title{
+  align-self: center;
+  margin-top: 10rem;
+  width: 30rem;
+   }
+   .about-copy{
+       margin:10rem;
+       margin-top: 3rem;
+       padding: 5rem;
+       border: 1px solid $dark-green;
+   }
+  }
