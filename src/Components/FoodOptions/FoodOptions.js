@@ -39,6 +39,7 @@ export function useCheckboxes() {
         newLeaveOut[index].checked = checked;
         setLeaveOut(newLeaveOut);
     }
+
     return {
         setToLeaveOut,
         leaveOut,
@@ -100,7 +101,6 @@ return (
                 </label>
             )}
            </div>
-            <input type="submit" value="Submit" />
         </form>
     </div>
 );
@@ -121,10 +121,12 @@ const FoodOptions = () => {
    .filter(t => t.checked)
    .map(checkbox => checkbox.name)
    .join(', ')
+
+   let checked = dietChecked + allergyChecked + leaveOutChecked
     return(
     <div>
         <Checkboxes {...checkboxes} />
-        <ApiMenuPlan diet={dietChecked} allergies={allergyChecked} leaveOut={leaveOutChecked}/>
+        { checked && <ApiMenuPlan diet={dietChecked} allergies={allergyChecked} leaveOut={leaveOutChecked}/>}
     </div>)
   }
 
