@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
+
 $orange: #EB6424;
 $light-orange: #FA9500;
 $silk: #FFDAC6;
@@ -26,7 +27,6 @@ background-color: $light-orange;
 margin: 0 auto;
 font-family: $primary-font;
 }
-
 
 ///////About Page
 .about-container{
@@ -67,6 +67,27 @@ font-family: $primary-font;
     margin: 5rem;
     // box-shadow: 5px 10px #7C6A0A;
 }
+/////Menu Page
+.Menu{
+header{
+background-image: url('./Assets/background.jpg');
+background-size: cover;
+width: 100vw;
+height: 20rem;
+margin: 0;
+}
+div.transparent{
+    background-color: $silk;
+    text-align: center;
+    color: $orange;
+    height: 100%;
+    opacity: 90%;
+    padding: 1rem;
+    margin: 5rem;
+    margin-top: 0;
+}
+}
+
 ////Responsive
 @media only screen and (min-width: 600px) {
    .about-title{
