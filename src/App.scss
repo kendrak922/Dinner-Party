@@ -34,23 +34,25 @@ font-family: $primary-font;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+.About{
+    img{
+    height: 70%;
+    width: 100%;
+    }
+    }
 
 .about-copy{
     display: flex;
     flex-flow: row wrap;
-    // text-align: center;
     font-size: 1.3rem;
     color: $dark-green;
     padding: 1rem;
     margin: 2rem;
     border-radius: 4px;
-    box-shadow: 2px 2px $dark-green;
+    box-shadow: 2px 2px 3px $dark-green;
     background-color: $light-green;
-    position: relative;
-    p:n-thChild(even){
-    left: 50;
-    }
 }
 
 .about-title{
@@ -68,7 +70,7 @@ font-family: $primary-font;
     // box-shadow: 5px 10px #7C6A0A;
 }
 /////Menu Page
-.Menu{
+.menu{
 header{
 background-image: url('./Assets/background.jpg');
 background-size: cover;
@@ -98,7 +100,36 @@ div.transparent{
    .about-copy{
        margin:10rem;
        margin-top: 3rem;
-       padding: 5rem;
        border: 1px solid $dark-green;
+       p{
+           margin-left: 10rem;
+           margin-right: 10rem;
+    }
+  
    }
+.about{
+    img{
+       height: 70%;
+       width: 100%;
+       position: relative;
+       margin-top: -400px;
+       z-index: -1;
+    //    left:10%;
+    }
+}
+.menu header{
+    background-size: contain;
+    div.transparent{
+      opacity:95%;
+    }
+}
+.menu-header{
+
+h2{
+    font-size: 4em;
+}
+p{
+    font-size: 2em;
+}
+}
   }

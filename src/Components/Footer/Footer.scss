@@ -7,6 +7,10 @@
     color: $dark-green;
     font-family: $primary-font;
 }
+img{
+    margin-bottom:-20px;
+    width: 100%;
+}
 .footer{
     display: flex;
     flex-flow: column;
@@ -53,3 +57,8 @@ textarea[type=textarea]{
     font-family: $primary-font
 }
 
+@media only screen and (min-width: 600px) {
+.footer-container img{
+   margin-bottom: -150px;
+}
+}

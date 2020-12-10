@@ -33,7 +33,7 @@ function API (props){
   } else {
     return (
       <div>
-        <button onClick={() => setCount(count + 1)}>Try Another</button>
+        {/* <button onClick={() => setCount(count + 1)}>Try Another</button> */}
         <div>
         {items.map(item => (
             <div className="cardContainer"key={item.title}>
@@ -43,6 +43,7 @@ function API (props){
           </div>
         ))}
       </div>
+      <button onClick={() => setCount(count + 1)}>Try Another</button>
       </div>
     );
   }

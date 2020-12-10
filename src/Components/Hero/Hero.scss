@@ -8,6 +8,8 @@
     background-color: $orange; 
     margin: 0 auto;
     padding: 1rem;
+    position:relative;
+    z-index: 1;
     h1{
         font-size: 4rem;
     }
@@ -15,4 +17,14 @@
         font-size: 1rem;
         font-family: $primary-font;
     }
+}
+
+@media only screen and (min-width: 600px) {
+.hero-container{
+    p{
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
 }

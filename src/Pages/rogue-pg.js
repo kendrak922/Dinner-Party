@@ -7,7 +7,6 @@ function Rogue() {
   return (
     <div>
     <Random />
-   
     </div>
   );
 }

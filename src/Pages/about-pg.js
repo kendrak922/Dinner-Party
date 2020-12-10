@@ -6,14 +6,10 @@ import dinner from '../Assets/dinner.jpg'
 
 function About() {
   return (
-    <div className="About">
+    <div className="about">
   <Hero />
-  <img src={dinner} alt="dinner table" style=
-  {{
-    height: "70%",
-    width: "100%"
-  }}>
-  </img>
+  <img src={dinner} alt="dinner table" />
+  
 <div className="about-container">
 <h2 className="about-title">About The App</h2>
   <div className="about-copy">
