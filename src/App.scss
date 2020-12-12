@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
 
-$orange: #EB6424;
+$orange: #310D20;
 $light-orange: #FA9500;
 $silk: #FFDAC6;
 $light-green: #BABD8D;
-$dark-green: #7C6A0A;
+$dark-green: #14281D;
 
 $primary-font: 'Playfair Display', serif;
 $secondary-font: 'Oswald', sans-serif;
@@ -36,7 +36,7 @@ font-family: $primary-font;
     align-items: center;
     position: relative;
 }
-.About{
+.about{
     img{
     height: 70%;
     width: 100%;
@@ -63,7 +63,7 @@ font-family: $primary-font;
     border-radius: 4px;
     font-family: $secondary-font;
     border: 1rem solid $dark-green;
-    // background-color: $dark-green;
+    background-color: $silk;
     transform: rotate(-8deg)
     skew(-8deg);
     margin: 5rem;
@@ -83,7 +83,6 @@ div.transparent{
     text-align: center;
     color: $orange;
     height: 100%;
-    opacity: 90%;
     padding: 1rem;
     margin: 5rem;
     margin-top: 0;
@@ -101,6 +100,7 @@ div.transparent{
        margin:10rem;
        margin-top: 3rem;
        border: 1px solid $dark-green;
+       width: 40rem;
        p{
            margin-left: 10rem;
            margin-right: 10rem;
@@ -120,7 +120,6 @@ div.transparent{
 .menu header{
     background-size: contain;
     div.transparent{
-      opacity:95%;
     }
 }
 .menu-header{

@@ -57,7 +57,7 @@ return (
     <div>
         <form className="foodOptions">
         <div>
-            <h3>Special Diets do we Need to Obey?</h3>
+            <h3>Special Diets we Need to Obey?</h3>
             {diet.map((diet, i) =>
                 <label key={diet.name}>
                     <input
