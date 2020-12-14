@@ -3,7 +3,7 @@ import FoodOptions from "../Components/FoodOptions/FoodOptions"
 
 function Menu() {
   return (
-    <div className="menu">
+    <main className="menu">
       <header className="menu-header">
       <div className="transparent">
      <h2> Let's Get Started Shall We?</h2>
@@ -12,7 +12,7 @@ function Menu() {
      </div>
       </header>
       <FoodOptions />
-    </div>
+    </main>
   );
 }
 

@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
 
 
-$orange: #310D20;
+$orange: #45062E;
 $light-orange: #FA9500;
 $silk: #FFDAC6;
 $light-green: #BABD8D;
@@ -56,18 +56,17 @@ font-family: $primary-font;
 }
 
 .about-title{
-    color: $dark-green;
+    color: $orange;
     font-size: 3em;
     text-align: center;
     padding: 1rem;
     border-radius: 4px;
     font-family: $secondary-font;
-    border: 1rem solid $dark-green;
+    border: 1rem solid $orange;
     background-color: $silk;
     transform: rotate(-8deg)
     skew(-8deg);
     margin: 5rem;
-    // box-shadow: 5px 10px #7C6A0A;
 }
 /////Menu Page
 .menu{
@@ -76,21 +75,48 @@ background-image: url('./Assets/background.jpg');
 background-size: cover;
 width: 100vw;
 height: 20rem;
-margin: 0;
+// margin: 0;
 }
 div.transparent{
     background-color: $silk;
     text-align: center;
     color: $orange;
     height: 100%;
-    padding: 1rem;
+    // padding: 1rem;
     margin: 5rem;
     margin-top: 0;
+    padding-top: 2rem;
+    
+
 }
 }
 
 ////Responsive
-@media only screen and (min-width: 600px) {
+
+////Ipad
+@media only screen and (min-width: 768px) {
+    .about{
+        img{
+           height: 70%;
+           width: 100%;
+           position: relative;
+           margin-top: -200px;
+           z-index: -1;
+        }
+    }
+.menu .transparent{
+    h2{
+     font-size: 2.5em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+ }
+
+}
+
+///full screen
+@media only screen and (min-width: 1100px) {
    .about-title{
   align-self: center;
   margin-top: 10rem;
@@ -120,6 +146,7 @@ div.transparent{
 .menu header{
     background-size: contain;
     div.transparent{
+        margin-bottom: 100px;
     }
 }
 .menu-header{

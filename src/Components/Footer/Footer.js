@@ -7,7 +7,7 @@ const Footer = ()=>{
 return(
     <div className="footer-container">
    <img src={waves} alt="wave styling"></img>
-    <form className="footer">
+    <form className="footer" data-netlify="true">
         <h1>Contact Us</h1>
         <label>Name: <br></br>
         <input name="name" type="text" />

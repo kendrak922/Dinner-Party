@@ -5,9 +5,9 @@ import Random from '../Components/RandomMeal/Random'
 
 function Rogue() {
   return (
-    <div>
+    <main>
     <Random />
-    </div>
+    </main>
   );
 }
 
