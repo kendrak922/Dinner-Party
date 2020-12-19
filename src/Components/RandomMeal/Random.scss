@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import '../../variables.scss';
 
 .header{
     display: flex;
@@ -16,6 +16,9 @@
         font-size: 4rem;
         font-family: $primary-font;
         margin:0;
+    }
+    p:nth-child(2){
+        font-size: 1.5rem;
     }
 }
 button{

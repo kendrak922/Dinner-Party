@@ -1,11 +1,11 @@
-@import "../../App.scss";
+@import "../../variables.scss";
 
 
 
 .hero-container{
     font-family: $secondary-font;
     color: $silk;
-    background-color: $orange; 
+    background-color: $purple; 
     margin: 0 auto;
     padding: 1rem;
     position:relative;

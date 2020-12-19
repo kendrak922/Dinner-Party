@@ -1,4 +1,4 @@
-@import '../../App.scss';
+@import '../../variables.scss';
 
 .cardContainer{
     display: flex;
@@ -9,10 +9,9 @@
     background-color: $light-green;
     border-radius: 10px;
     margin: 3rem auto;
-    color: $orange;
+    color: $purple;
     h2{
         font-family: $secondary-font;
-        // color: $dark-green;
     }
     img{
         height: 13rem;
@@ -26,6 +25,6 @@
 
 @media only screen and (min-width: 600px) {
 .cardContainer{
-    width: 50%;
+    width: 20%;
 }
 }

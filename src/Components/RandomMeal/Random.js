@@ -35,7 +35,6 @@ const onClick = () => {
            <div className="header"> 
            <p> Forget Them</p>  
            <p>You tried, ok. There's no way to please everyone.</p>    
-           {/* <button className='rogue-button'onClick={onClick}>Go Rogue</button> */}
            </div>
          <Result />
          </div>

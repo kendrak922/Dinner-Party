@@ -1,33 +1,4 @@
-/////variables
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
-
-
-$orange: #45062E;
-$light-orange: #FA9500;
-$silk: #FFDAC6;
-$light-green: #BABD8D;
-$dark-green: #14281D;
-
-$primary-font: 'Playfair Display', serif;
-$secondary-font: 'Oswald', sans-serif;
-$display-font:'Gravitas One', cursive;
-
-// Global Styles
-html{
-
-a{
-    text-decoration: none;
-    color: $dark-green;
-}
-}
-body{
-background-color: $light-orange;
-margin: 0 auto;
-font-family: $primary-font;
-}
-
+@import './variables.scss';
 ///////About Page
 .about-container{
     display: flex;
@@ -56,13 +27,13 @@ font-family: $primary-font;
 }
 
 .about-title{
-    color: $orange;
+    color: $purple;
     font-size: 3em;
     text-align: center;
     padding: 1rem;
     border-radius: 4px;
     font-family: $secondary-font;
-    border: 1rem solid $orange;
+    border: 1rem solid $purple;
     background-color: $silk;
     transform: rotate(-8deg)
     skew(-8deg);
@@ -75,19 +46,17 @@ background-image: url('./Assets/background.jpg');
 background-size: cover;
 width: 100vw;
 height: 20rem;
-// margin: 0;
+font-family: $secondary-font;
 }
+
 div.transparent{
     background-color: $silk;
     text-align: center;
-    color: $orange;
-    height: 100%;
-    // padding: 1rem;
+    color: $purple;
+    padding: 1rem;
     margin: 5rem;
     margin-top: 0;
     padding-top: 2rem;
-    
-
 }
 }
 
