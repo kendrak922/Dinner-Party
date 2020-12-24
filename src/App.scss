@@ -71,6 +71,7 @@ div.transparent{
            position: relative;
            margin-top: -200px;
            z-index: -1;
+           margin-bottom: 0;
         }
     }
 .menu .transparent{
@@ -109,7 +110,8 @@ div.transparent{
        position: relative;
        margin-top: -400px;
        z-index: -1;
-    //    left:10%;
+       margin-bottom: 0;
+
     }
 }
 .menu header{
