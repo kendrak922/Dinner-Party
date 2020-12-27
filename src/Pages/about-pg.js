@@ -12,9 +12,9 @@ function About() {
 <div className="about-container">
 <h2 className="about-title">About The App</h2>
   <div className="about-copy">
-  <p>This is an app for people pleasers who chronically over extend themselves. Get Together helps you to (falsley) appear like you have everything under control.</p>
+  <p>This is an app for people pleasers who chronically overextend themselves. Get Together helps you to (falsely) appear like you have everything under control.</p>
   <br></br>
-  <p>Our Menu Planner feature allows you to hone down on a plan by brainstorming some recieps that fall within the constraints of your party attendees.</p>
+  <p>Our Menu Planner tool allows you to generate a meal ideas by brainstorming some recipes that will satisfy all of your friends' needs.</p>
   <br></br>
   <p>If that doesn't work, try Rogue Mode as a last resort. A feature that allows you to randomly select a menu.</p>
   <br></br>
