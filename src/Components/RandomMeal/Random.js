@@ -6,7 +6,7 @@ const Result = () => {
     return(
        <div className="menu">
          <h1>Appetizer</h1>
-         <API meal="appetizer" />
+         <API meal="starter" />
          <h1>Dinner</h1>
          <API meal="dinner" />
          <h1>Dessert</h1>

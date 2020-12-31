@@ -33,7 +33,6 @@ function API (props){
   } else {
     return (
       <div>
-        {/* <button onClick={() => setCount(count + 1)}>Try Another</button> */}
         <div>
         {items.map(item => (
             <div className="cardContainer"key={item.title}>
